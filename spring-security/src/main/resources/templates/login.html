@@ -17,5 +17,8 @@
         <div><label>Password :<input type="password" name="password"/></label></div>
         <div><input type="submit" value="sign in"></div>
     </form>
+    <div th:if="not ${param.logout}">
+        <a href="/register">signup</a>
+    </div>
 </body>
 </html>
